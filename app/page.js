@@ -209,9 +209,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="quick-strip" aria-label="Quick navigation">
+        <a className="quick-link" href="#capture">
+          快速记录
+        </a>
+        <a className="quick-link" href="#pending">
+          待执行
+        </a>
+        <a className="quick-link" href="#open">
+          持仓中
+        </a>
+        <a className="quick-link" href="#closed">
+          已平仓
+        </a>
+      </section>
+
       {message ? <p className="notice-bar">{message}</p> : null}
 
-      <section className="capture-panel panel">
+      <section className="capture-panel panel" id="capture">
         <div className="panel-head">
           <div>
             <p className="eyebrow">Step 1</p>
@@ -246,7 +261,7 @@ export default function HomePage() {
       </section>
 
       <section className="board-grid">
-        <article className="panel">
+        <article className="panel" id="pending">
           <div className="panel-head">
             <div>
               <p className="eyebrow">Step 2</p>
@@ -420,7 +435,7 @@ export default function HomePage() {
           </div>
         </article>
 
-        <article className="panel">
+        <article className="panel" id="open">
           <div className="panel-head">
             <div>
               <p className="eyebrow">Step 3</p>
@@ -488,7 +503,7 @@ export default function HomePage() {
         </article>
       </section>
 
-      <section className="closed-panel panel">
+      <section className="closed-panel panel" id="closed">
         <div className="panel-head">
           <div>
             <p className="eyebrow">Archive</p>
@@ -540,6 +555,18 @@ export default function HomePage() {
           )}
         </div>
       </section>
+
+      <nav className="mobile-dock" aria-label="Mobile shortcuts">
+        <a className="dock-primary" href="#capture">
+          + 新记录
+        </a>
+        <a className="dock-link" href="#pending">
+          待执行
+        </a>
+        <a className="dock-link" href="#open">
+          持仓
+        </a>
+      </nav>
     </main>
   );
 }
