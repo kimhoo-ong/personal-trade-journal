@@ -1,18 +1,18 @@
 :root {
   color-scheme: light;
-  --bg: #f4ede3;
-  --panel: rgba(255, 250, 243, 0.88);
-  --panel-strong: #fff9f0;
-  --ink: #211b16;
-  --muted: #756657;
-  --line: rgba(58, 42, 27, 0.12);
-  --primary: #b65f39;
-  --primary-deep: #8a462b;
-  --blue: #46687a;
-  --green: #1d7a56;
-  --amber: #b87c1f;
-  --red: #9c2f2f;
-  --shadow: 0 24px 72px rgba(78, 53, 30, 0.12);
+  --bg: #fbfbf8;
+  --panel: rgba(255, 255, 255, 0.9);
+  --panel-strong: #ffffff;
+  --ink: #1f2022;
+  --muted: #6e737c;
+  --line: rgba(32, 38, 48, 0.1);
+  --primary: #d06f47;
+  --primary-deep: #a95534;
+  --blue: #53758d;
+  --green: #2f8a68;
+  --amber: #bb8a2e;
+  --red: #b14545;
+  --shadow: 0 20px 60px rgba(90, 108, 130, 0.1);
 }
 
 * {
@@ -28,9 +28,9 @@ body {
   min-height: 100vh;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(220, 165, 117, 0.22), transparent 26%),
-    radial-gradient(circle at bottom right, rgba(112, 154, 174, 0.18), transparent 32%),
-    linear-gradient(180deg, #f8f2ea 0%, #f1e6d8 52%, #efe1cf 100%);
+    radial-gradient(circle at top left, rgba(255, 212, 186, 0.3), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(203, 224, 235, 0.26), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f9fafc 54%, #f4f6f9 100%);
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -103,12 +103,12 @@ button {
 .stat-card {
   padding: 18px;
   border-radius: 24px;
-  border: 1px solid rgba(58, 42, 27, 0.08);
-  background: rgba(255, 250, 243, 0.94);
+  border: 1px solid rgba(32, 38, 48, 0.07);
+  background: rgba(255, 255, 255, 0.96);
 }
 
 .stat-card.primary {
-  background: linear-gradient(160deg, rgba(182, 95, 57, 0.16), rgba(255, 250, 243, 0.98));
+  background: linear-gradient(160deg, rgba(208, 111, 71, 0.12), rgba(255, 255, 255, 0.98));
 }
 
 .stat-card span {
@@ -127,7 +127,7 @@ button {
   margin: 16px 0 0;
   padding: 14px 16px;
   border-radius: 18px;
-  background: rgba(182, 95, 57, 0.1);
+  background: rgba(208, 111, 71, 0.08);
   color: var(--primary-deep);
 }
 
@@ -190,10 +190,10 @@ button {
 .field select,
 .field textarea {
   width: 100%;
-  border: 1px solid rgba(58, 42, 27, 0.12);
+  border: 1px solid rgba(32, 38, 48, 0.1);
   border-radius: 18px;
   padding: 14px 16px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.98);
   color: var(--ink);
   outline: none;
 }
@@ -206,8 +206,8 @@ button {
 .field input:focus,
 .field select:focus,
 .field textarea:focus {
-  border-color: rgba(182, 95, 57, 0.5);
-  box-shadow: 0 0 0 4px rgba(182, 95, 57, 0.1);
+  border-color: rgba(208, 111, 71, 0.45);
+  box-shadow: 0 0 0 4px rgba(208, 111, 71, 0.08);
 }
 
 .stack-list {
@@ -219,11 +219,11 @@ button {
   padding: 18px;
   border-radius: 22px;
   background: var(--panel-strong);
-  border: 1px solid rgba(58, 42, 27, 0.08);
+  border: 1px solid rgba(32, 38, 48, 0.07);
 }
 
 .journal-card {
-  background: linear-gradient(180deg, rgba(70, 104, 122, 0.08), rgba(255, 249, 240, 0.96));
+  background: linear-gradient(180deg, rgba(83, 117, 141, 0.08), rgba(255, 255, 255, 0.98));
 }
 
 .stack-top {
@@ -254,7 +254,7 @@ button {
 .detail-form {
   margin-top: 16px;
   padding-top: 16px;
-  border-top: 1px solid rgba(58, 42, 27, 0.08);
+  border-top: 1px solid rgba(32, 38, 48, 0.07);
 }
 
 .mini-grid {
@@ -327,12 +327,12 @@ button {
 
 .secondary-button {
   color: var(--primary-deep);
-  background: rgba(182, 95, 57, 0.1);
+  background: rgba(208, 111, 71, 0.09);
 }
 
 .ghost-button {
   color: var(--muted);
-  background: rgba(58, 42, 27, 0.05);
+  background: rgba(32, 38, 48, 0.05);
 }
 
 .primary-button:hover,
@@ -347,8 +347,8 @@ button {
   min-height: 180px;
   padding: 20px;
   border-radius: 24px;
-  border: 1px dashed rgba(58, 42, 27, 0.14);
-  background: rgba(255, 255, 255, 0.28);
+  border: 1px dashed rgba(32, 38, 48, 0.12);
+  background: rgba(255, 255, 255, 0.5);
   color: var(--muted);
   text-align: center;
   line-height: 1.7;
