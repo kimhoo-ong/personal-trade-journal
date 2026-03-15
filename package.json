@@ -1,0 +1,20 @@
+{
+  "name": "trenddetection-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trade idea capture and discipline journal built with Next.js.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "next": "^16.1.6",
+    "openai": "^6.29.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "zod": "^4.3.6"
+  }
+}
